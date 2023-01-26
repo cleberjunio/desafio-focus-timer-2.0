@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --cor-padrao: hsla(240, 6%, 21%, 1);
+    --font-timer: 'Roboto', sans-serif;
+}
+
+body {
+    font-size: 12.7rem;
+    font-family: var(--font-timer);
+    color: var(--cor-padrao);
+    margin: 19.6rem 22.6rem 18.8rem 23.3rem;
+}
+
+main {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+.display {
+    margin-right: 19.2rem;
+}
+
+.cards {
+    width: 30.8rem;
+    display: grid;
+    gap: 3.2rem;
+}
+
+.cards {
+    grid-template-columns: 1fr 1fr;
+}
+
+.forest {
+    grid-area: 1n;
+}
+
+.rain {
+    grid-area: 1n;
+}
+
+.coffeeShop {
+    grid-area: 2n;
+}
+
+.fireHouse {
+    grid-area: 2n;
+}
+
+.controls button {
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    border: none;
+}
+
+.cards button {
+    background: #E1E1E6;
+    border-radius: 24px;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* #forests svg {
+    fill: #02799D;
+}
+ */
+
+
+/* #feedback svg{fill: red;}
+
+#feedback svg:active{fill: green;}
+<button id="feedback">
+    <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 24 24">
+    <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"></path>
+    </svg>
+</button>
+Expandir trecho de código
+Para alterar a cor usando javascript dinamicamente basta
+
+document.getElementById("feedback").querySelector("svg").style.fill = "red"; */
+
+
+/* .cards path:nth-child(1) {
+    fill: #02799D;
+} */
