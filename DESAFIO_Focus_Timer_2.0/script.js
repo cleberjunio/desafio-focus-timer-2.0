@@ -36,13 +36,13 @@ function countDown() {
         let seconds = Number(secondsDisplay.textContent)
 
         secondsDisplay.textContent = '00'
-        if (minutes <= 0) {
+        if (minutes <= 0 && seconds <=0) {
             timeEnd()
             return
 
         }
         if (seconds <= 0) {
-            seconds = 5;
+            seconds = 60;
             minutesDisplay.textContent = String(minutes - 1).padStart(2, '0')
         }
         secondsDisplay.textContent = String(seconds - 1).padStart(2, '0')
